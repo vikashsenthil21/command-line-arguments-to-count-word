@@ -24,20 +24,25 @@ Step 6:
 Now iterate through the variable and increase the count: and print the count vi
 
 ## PROGRAM:
-Developed by: vikash s
-RegisterNumber: 22008879
-file = open("test.txt", "r") 
-count=0 
-for line in file:    
-    words = line.split(" ");
-    count  += len(words);  
-print("Number of words present in given file: " + str(count));  
-file.close();
+```
+#program is developed: VIKASH S
+# REF.NO: 22008879
+import sys
+count= 0
+with open(sys.argv[1],'r') as file:
+    for line in file:
+        word= line.split()
+        count += len(word)
+print("program is developed: VIKASH S")
+print("word count in file = ",count)
+```
 ### OUTPUT:
-![Screenshot 2023-01-24 235937](https://user-images.githubusercontent.com/119433834/214377835-11f0c1c7-081f-4a29-872f-cb258e363bb9.png)
+
+![WhatsApp Image 2023-01-25 at 20 39 00](https://user-images.githubusercontent.com/119433834/214641923-92fab328-9e27-4813-af15-b86937238a1e.jpg)
 
 
-![Screenshot 2023-01-24 235920](https://user-images.githubusercontent.com/119433834/214377862-f02c524e-ac02-4c11-b3e2-4e93b9af90ae.png)
+![WhatsApp Image 2023-01-25 at 20 01 35](https://user-images.githubusercontent.com/119433834/214641943-c9c53afa-04f9-4816-947d-39f44adfaf0f.jpg)
+
 
 
 ## RESULT:
